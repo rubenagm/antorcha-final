@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mx.antorcha.Activities.SeleccionaDeportesEvento">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/selecciona_deportes_evento_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/degradado_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/selecciona_deportes_evento_regresar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Selecciona los deportes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:padding="10dp"
+                android:alpha=".8"
+                android:src="@drawable/icono_verificar"
+                android:id="@+id/selecciona_deportes_evento_verificar"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:alpha=".8"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Selecciona los deportes a los eventos, recuerda seleccionar los que más lo representen o más se acerquen a su categoria."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:alpha=".2"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <ListView
+        android:id="@+id/selecciona_deportes_evento_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

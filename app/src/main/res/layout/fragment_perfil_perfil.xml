@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/perfil_imagen_miembro"
+                        android:src="@drawable/default_perfil_hombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp" />
+                    <ImageView
+                        android:src="@drawable/degradado_inferior_png"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/perfil_imagen_degradado"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <ImageView
+                        android:src="@drawable/degradado_superior_png"
+                        android:scaleType="centerCrop"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/perfil_imagen_degradado_superior"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:alpha=".87"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Nombre del miembro"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/perfil_nombre_miembro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:alpha=".87"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:textSize="15sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Edad en años"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/perfil_edad_miembro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:id="@+id/perfil_click_actualizar_perfil"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:alpha=".87"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/perfil_actualizar_perfil"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/perfil_perfil_descripcion"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="20dp"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Cuentanos más de ti actualizando tu perfil en antorcha, más opciones que se encuentra en la parte superior derecha de la foto de perfil"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="13dp"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:alpha=".12"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <TextView
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/perfil_perfil_intereses"
+                    android:fontFamily="sans-serif"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Actualiza tu información personal!"
+                    android:textSize="13sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:alpha=".12"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp">
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Numero de medallas"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+                    <!--Medallas visuales-->
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <ImageView
+                            android:alpha=".2"
+                            android:layout_gravity="center"
+                            android:id="@+id/perfil_flecha_izquierda"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="5"
+                            android:id="@+id/perfil_lista_medallas"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                        <ImageView
+                            android:alpha=".2"
+                            android:layout_gravity="center"
+                            android:id="@+id/perfil_flecha_derecha"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!-- Numero de medallas -->
+                <LinearLayout
+                    android:paddingBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/medallas_cantidad_prometeo"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Prometeo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:fontFamily="sans-serif-light"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Antorcha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/medallas_cantidad_antorcha"
+                            android:fontFamily="sans-serif-light"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Fuego"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/medallas_cantidad_fuego"
+                            android:fontFamily="sans-serif-light"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Flama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/medallas_cantidad_flama"
+                            android:fontFamily="sans-serif-light"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Chispa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/medallas_cantidad_chispa"
+                            android:fontFamily="sans-serif-light"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

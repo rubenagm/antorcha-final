@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:alpha=".5"
+        android:id="@+id/item_metas_mas_opciones"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:id="@+id/item_meta_clic_item"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/item_meta_progress"
+                android:layout_width="290dp"
+                android:layout_height="230dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:max="100"
+                android:secondaryProgress="100"
+                android:progressDrawable="@drawable/progress_circular" />
+            <TextView
+                android:id="@+id/item_meta_porcentaje"
+                android:textColor="#FF9522"
+                android:fontFamily="sans-serif-light"
+                android:textSize="70sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="50%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/item_meta_meta_en_progreso"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_meta_nombre_meta"
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp"
+                android:text="Nombre de la meta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/item_meta_inicio"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:text="65Kg"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/item_lista_medalla_linea"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:id="@+id/item_meta_fin"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:text="65Kg"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="Actual"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="7dp" />
+                <TextView
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="Meta"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Este linear layou es cuando la meta ha sido terminada -->
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/item_meta_meta_terminada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/item_meta_nombre_meta_terminada"
+                android:layout_marginBottom="5dp"
+                android:textSize="17sp"
+                android:text="Nombre de la meta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_meta_medida_terminada"
+                android:textSize="27sp"
+                android:gravity="center"
+                android:text="65Kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="Meta terminada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <TextView
+        android:alpha=".1"
+        android:layout_marginTop="15dp"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_metas_clic_compartir"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:alpha=".5"
+            android:id="@+id/item_metas_compartir"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

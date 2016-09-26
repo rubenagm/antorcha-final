@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:alpha=".8"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:text="Filtro de búsqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="15sp"
+        android:alpha=".57"
+        android:textColor="#000000"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Utiliza el filtro de búsqueda para encontra el evento o los espacios deportivos de tu preferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:alpha=".8"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:text="Sólo actividades de mi preferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Switch
+        android:id="@+id/filtro_busqueda_actividades_preferencia"
+        android:checked="true"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:fontFamily="sans-serif-medium"
+        android:alpha=".8"
+        android:textSize="17sp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:text="Rango de cercanía"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:max="4"
+        android:progress="1"
+        android:id="@+id/filtro_busqueda_espacio_seekbar"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></SeekBar>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="1 Km"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="3 Km"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="5 Km"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="10 Km"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <!--<TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="25 Km"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />-->
+        <TextView
+            android:textSize="12sp"
+            android:alpha=".8"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="Todo"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/dialogo_filtro_espacio_cancelar"
+            android:textSize="15sp"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:text="CANCELAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/dialogo_filtro_espacio_aceptar"
+            android:textColor="@color/wallet_holo_blue_light"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:text="ACEPTAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

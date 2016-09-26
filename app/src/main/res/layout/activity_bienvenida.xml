@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.mx.antorcha.Bienvenida.Bienvenida">
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            android:layout_weight="8"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/antorcha_con_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:alpha=".87"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:text="Bienvenido!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17sp"
+                android:textColor="#FFFFFF"
+                android:text="Con Antorcha podrás encontrar el mejor espacio para practicar deporte, enterarte de eventos y recibir notificaciones oportunas para que el deporte sea más sencillo de practicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"></LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bienvenida_siguiente"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+</RelativeLayout>

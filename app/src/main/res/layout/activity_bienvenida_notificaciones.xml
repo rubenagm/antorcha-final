@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.mx.antorcha.Bienvenida.BienvenidaNotificaciones">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="sans-serif-light"
+        android:alpha=".8"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="2/2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/logo_antorcha"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="sans-serif"
+            android:alpha="87"
+            android:layout_marginTop="55dp"
+            android:textColor="#FFFFFF"
+            android:text="Notificaciones"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:alpha=".87"
+            android:textColor="#FFFFFF"
+            android:text="Con antorcha podrás estar al tanto de cualquier evento, algún nuevo espacio deportivo cerca de ti o alguna promoción. Siempre recibirás sólo lo que a ti te interesa."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:alpha=".8"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/notificacion_evento_2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+            <ImageView
+                android:src="@drawable/notificacion_espacio_deportivo_2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+            <ImageView
+                android:src="@drawable/notificacion_medalla_2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:text="Eventos"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:text="Espacios deportivos"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/bienvenida_notificaciones"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:text="Promociones"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/bienvenida_notificaciones_siguiente"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+</RelativeLayout>

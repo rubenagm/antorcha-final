@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#232C39"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mx.antorcha.Activities.Login">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/login_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/degradado_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:id="@+id/login_barra_atras"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Iniciar sesión"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/logo_antorcha"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp" />
+            <TextView
+                android:layout_marginTop="12dp"
+                android:textSize="19sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="Bienvenido de vuelta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/login_campo_correo"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/edittext_diseno"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:hint="Correo Electronico"
+                android:layout_height="35dp" />
+            <EditText
+                android:id="@+id/login_campo_pass"
+                android:layout_marginTop="7dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:hint="Contraseña"
+                android:layout_height="35dp" />
+            <ImageView
+                android:id="@+id/login_boton_inicio_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="51dp" />
+            <TextView
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-light"
+                android:text="¿Olvidaste tu contraseña?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/login_imagen_o"
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <com.facebook.login.widget.LoginButton
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:paddingLeft="13dp"
+                android:paddingTop="13dp"
+                android:paddingBottom="12dp"
+                android:layout_gravity="center"
+                android:id="@+id/login_facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_marginTop="15dp"
+                android:id="@+id/sign_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

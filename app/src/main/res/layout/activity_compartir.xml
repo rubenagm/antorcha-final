@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.mx.antorcha.Activities.Compartir">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nueva_meta_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/degradado_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/compartir_atras"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Expande el fuego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:textSize="19sp"
+
+                android:textColor="#000000"
+                android:text="Envía tu código!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:layout_marginTop="2dp"
+                android:text="Invita a tus amigos a crecer cada vez más a esta comunidad deportiva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/compartir_layout_compartir"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/degradado_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="sans-serif-thin"
+                        android:layout_gravity="center"
+                        android:textSize="40sp"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/compartir_codigo_invitacion"
+                        android:text="4NTORCH4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="sans-serif"
+                        android:textSize="15sp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#FFFFFF"
+                        android:text="Gana medallas invitando a tus amigos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/compartir_boton_compartir"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

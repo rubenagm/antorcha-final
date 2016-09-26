@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.mx.antorcha.Bienvenida.SeleccionaDeportes">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="sans-serif-light"
+        android:alpha=".8"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:text="1/2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/logo_antorcha"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="sans-serif"
+            android:alpha="87"
+            android:layout_marginTop="55dp"
+            android:textColor="#FFFFFF"
+            android:text="Selecciona tus deportes favoritos"
+            android:textSize="19sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:alpha=".87"
+            android:textColor="#FFFFFF"
+            android:text="Para darte la información más precisa y oportuna selecciona de los siguientes tus deportes favoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Futbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Basketball"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Ciclismo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_4"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Deportes de combate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Danza / Baile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_6"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Voleibol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/selecciona_deportes_7"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:alpha=".87"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Otros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-light"
+            android:alpha=".87"
+            android:textColor="#FFFFFF"
+            android:text="En antorcha contamos con una larga lista con todos los deportes, podrás configurarlos personalmente en tu perfil."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/selecciona_deportes_siguiente"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:text="Siguiente"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+</RelativeLayout>

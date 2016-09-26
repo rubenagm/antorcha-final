@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/especialistas_toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+            android:background="@drawable/degradado_toolbar"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/especialistas_barra_drawer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:text="Especialistas deportivos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:background="@drawable/degradado_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Spinner
+                android:id="@+id/especialistas_spinner_municipio"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></Spinner>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/degradado_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <Spinner
+                android:id="@+id/especialistas_spinner_especialidad"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></Spinner>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_especialistas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <!-- El drawer -->
+    <ListView android:id="@+id/lista_drawer"
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#FFFFFF"/>
+
+
+</android.support.v4.widget.DrawerLayout >

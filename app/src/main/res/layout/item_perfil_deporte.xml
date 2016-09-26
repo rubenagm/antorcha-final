@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="140dp">
+    <ImageView
+        android:id="@+id/deportes_lista_mas_opciones"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <ImageView
+        android:id="@+id/item_perfil_deporte_fondo"
+        android:background="#A0A0A0"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_deporte_texto_principal"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Prueba"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/item_deporte_texto_secundario"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:text="Prueba"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

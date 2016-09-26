@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/sliding_buscar_espacio_imagen_principal"
+                    android:src="@drawable/default_espacio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/sliding_buscar_actividades_espacio_nombre"
+                    android:textSize="14sp"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:text="Nombre del espacio deportivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/sliding_buscar_espacio_horario"
+                    android:layout_marginTop="5dp"
+                    android:text="Horarios:"
+                    android:alpha=".5"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/sliding_buscar_actividades_espacio_descripcion"
+                    android:layout_marginTop="7dp"
+                    android:text="Descripcion breve"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/sliding_buscar_espacio_valoracion"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="19sp"
+                    android:layout_marginLeft="35dp"
+                    android:text="N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:alpha=".87"
+                    android:src="@drawable/icono_estrella_llena"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp" />
+                <!-- Temporalmente fuera
+                <RatingBar
+
+                    android:numStars="5"
+                    style="@style/estrella"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/sliding_buscar_actividades_espacio_contacto"
+                        android:alpha=".4"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"></LinearLayout>
+                    <ImageView
+                        android:id="@+id/sliding_buscar_actividades_espacio_compartir"
+                        android:alpha=".4"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Actividades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- Tags de actividades -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/sliding_buscar_espacio_tags_actividades"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:alpha=".1"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Descripción"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sliding_buscar_espacio_descripcion"
+                android:layout_marginTop="10dp"
+                android:alpha=".57"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="Una descripción mas detallada del espacio deportivo que quiero asisitir para poder ibtener mas información"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:alpha=".1"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Servicios extras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- Tags de los servicios extra-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/sliding_buscar_espacio_tags_servicios"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:alpha=".1"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!-- Reseñas -->
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="15sp"
+                    android:alpha=".8"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Reseñas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:alpha=".6"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Escribe una reseña"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/sliding_buscar_actividades_espacio_lapiz"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:alpha=".4"
+                    android:id="@+id/sliding_buscar_actividad_espacio_flecha_izquierda"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/sliding_buscar_espacio_titulo_resenia"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:alpha=".8"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Escribe una reseña!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/sliding_buscar_espacio_resenia"
+                        android:layout_marginTop="15dp"
+                        android:alpha=".6"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:text="Cuentanos que te pareció este espacio deportivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/sliding_buscar_espacio_nombre_resenia"
+                            android:layout_alignParentRight="true"
+                            android:alpha=".8"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:alpha=".4"
+                    android:id="@+id/sliding_buscar_actividad_espacio_flecha_derecha"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:alpha=".1"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+                <ImageView
+                    android:alpha=".4"
+                    android:id="@+id/sliding_buscar_espacio_imagen_flecha_izquierda"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:alpha=".4"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/sliding_buscar_espacio_imagen_flecha_derecha"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/sliding_buscar_espacio_imagen_galeria"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nadar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:alpha=".1"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <!--
+            <TextView
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:text="Precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="70dp"
+                    android:layout_height="37dp"/>
+                <Spinner
+                    android:layout_width="70dp"
+                    android:layout_height="37dp"/>
+                <TextView
+                    android:alpha=".87"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:text="$00.00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>-->
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Membresias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/buscar_espacio_spinner_membresias"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"></Spinner>
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/buscar_espacio_boton_asignarme_espacio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

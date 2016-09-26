@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#232C39"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mx.antorcha.Activities.Registro">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/registro_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/degradado_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/registro_barra_regresar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Registrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+            <TextView
+                android:alpha=".87"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif-light"
+                android:textSize="22sp"
+                android:text="Crea una cuenta con nosotros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/registro_nombre"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:hint="Nombre"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/registro_apellidos"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:hint="Apellidos"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/registro_correo"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:hint="Correo electrónico"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <EditText
+                android:id="@+id/registro_password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:hint="Contraseña"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <LinearLayout
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/login_fecha_dia"
+                    android:background="@drawable/edittext_diseno"
+                    android:layout_width="45dp"
+                    android:layout_height="37dp"></Spinner>
+                <Spinner
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/login_fecha_mes"
+                    android:background="@drawable/edittext_diseno"
+                    android:layout_width="45dp"
+                    android:layout_height="37dp"></Spinner>
+                <Spinner
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/login_fecha_anio"
+                    android:background="@drawable/edittext_diseno"
+                    android:layout_width="60dp"
+                    android:layout_height="37dp"></Spinner>
+                <Spinner
+                    android:id="@+id/login_sexo"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/edittext_diseno"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp">
+                </Spinner>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/registro_boton_regitrarse"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+
+            <TextView
+                android:alpha=".87"
+                android:layout_marginTop="15dp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="Al registrarme acepto los términos y condiciones"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

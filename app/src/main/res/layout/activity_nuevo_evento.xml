@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.mx.antorcha.Activities.NuevoEvento">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/nuevo_evento_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        android:background="@drawable/degradado_toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/nuevo_evento_regresar"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:fontFamily="sans-serif-light"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:text="Nuevo evento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/antorcha_con_nombre_opt"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:text="Con Antorcha podrás registrar tus propios eventos para que así todos se enteren. Sólo debes llenar los datos del formulario y seguir las instrucciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:alpha="0.1"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:background="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Nombre del evento"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/nuevo_evento_nombre"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Una descripción breve pero clara"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/nuevo_evento_descripcion"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="62dp" />
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Domicilio del evento"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/nuevo_evento_domicilio"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Ciudad del evento"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:id="@+id/nuevo_evento_ciudad"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </Spinner>
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Teléfono de contacto"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/nuevo_evento_telefono"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_diseno"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <TextView
+                android:textSize="14sp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:alpha=".87"
+                android:textColor="#000000"
+                android:text="Fecha que iniciará evento"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/nuevo_evento_fecha"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:background="@drawable/edittext_diseno"
+                android:text="Selecciona la fecha"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+            <TextView
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:id="@+id/nuevo_evento_siguiente"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:text="Siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

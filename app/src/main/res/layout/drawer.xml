@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+        android:id="@+id/drawer_imagen_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="170dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/drawer_opcion_sesion"
+            android:background="@drawable/degradado_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/drawer_nombre_miembro"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:text="Nombre del miembro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:alpha=".9"
+                android:src="@drawable/icono_triangulo"
+                android:id="@+id/drawer_mas"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_width="11dp"
+                android:layout_height="11dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/drawer_layout_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:alpha=".8"
+                android:textColor="#000000"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:text="Cerrar sesión"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:alpha=".12"
+                android:background="#000000"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Buscar actividad -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_buscar_actividad"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:alpha=".5"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/drawer_icono_buscar_actividad"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_buscar_actividad"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Buscar actividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Actividades -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_actividades"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_actividades"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_actividades"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Actividades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Perfil -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_perfil"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_perfil"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_perfil"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Medallas -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_medallas"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_medallas"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_medallas"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Medallas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Metas -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_metas"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_metas"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_metas"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Metas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!-- Especialistas -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_especialistas"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_especialistas"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_especialistas"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Especialistas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:alpha=".12"
+            android:background="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <!-- Ayudanos a mejorar -->
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:id="@+id/drawer_layout_ayudanos_mejorar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:alpha=".5"
+                android:id="@+id/drawer_icono_ayudano_mejorar"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <TextView
+                android:id="@+id/drawer_texto_ayudanos_mejorar"
+                android:alpha=".7"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:text="Ayúdanos a mejorar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

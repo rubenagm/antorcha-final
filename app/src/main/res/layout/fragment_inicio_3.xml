@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232C39"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:src="@drawable/imagen_presentacion_3"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="400dp" />
+    </RelativeLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="Haz equipo"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Motiva a tus amigos invitándolos a encender el fuego deportivo. Practiquen juntos sus actividades deportivas favoritas"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

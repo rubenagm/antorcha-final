@@ -1,0 +1,98 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="3dp"
+    android:background="#FFFFFF"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/default_espacio"
+                    android:id="@+id/item_actividades_card_espacio_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <!--<ImageView
+                    android:alpha=".4"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/item_card_espacio_compartir"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />-->
+                <LinearLayout
+                    android:id="@+id/item_espacio_mostrar_espacio"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:alpha=".8"
+                        android:textColor="#000000"
+                        android:id="@+id/item_card_actividades_espacio_nombre"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16sp"
+                        android:text="Nombre del espacio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="15dp"
+                        android:id="@+id/item_card_actividades_espacio_descripcion"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13sp"
+                        android:text="Descripcion del espacio para así poder ver el "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/item_espacio_calificar"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/wallet_holo_blue_light"
+                        android:text="CALIFICAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_espacio_invitar"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/wallet_holo_blue_light"
+                        android:text="INVITAR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>

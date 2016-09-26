@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
+    <EditText
+        android:alpha=".80"
+        android:hint="Titulo"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_diseno"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/dialogo_insertar_resenia_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:textSize="13sp"
+        android:alpha=".57"
+        android:fontFamily="sans-serif-light"
+        android:hint="Reseña"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_diseno"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/dialogo_insertar_resenia_texto"
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/dialogo_insertar_resenia_cancelar"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="CANCELAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dialogo_insertar_resenia_enviar"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="ENVIAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

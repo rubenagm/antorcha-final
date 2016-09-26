@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="412px" height="111px" viewBox="0 0 412 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.182 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Aplicacion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Espacios-deportivos" sketch:type="MSArtboardGroup" transform="translate(-154.000000, -491.750000)" stroke="#000000" filter="url(#filter-1)" stroke-opacity="0.12" fill="#FFFFFF">
+            <g id="Triangle-1-+-Buscar-una-actividad-+-ic_more_vert_48px" sketch:type="MSLayerGroup" transform="translate(160.000000, 494.000000)">
+                <path d="M183.847418,81 L197.648357,102.241589 L211.943282,81 L392.009848,81 C396.419794,81 400,77.4182551 400,72.9999489 L400,9.00005106 C400,4.5797863 396.422687,1 392.009848,1 L7.99015164,1 C3.58020589,1 0,4.58174486 0,9.00005106 L0,72.9999489 C0,77.4202137 3.57731274,81 7.99015164,81 L183.847418,81 Z" id="Triangle-1" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
